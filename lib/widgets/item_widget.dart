@@ -7,15 +7,34 @@ class ItemWidget extends StatelessWidget {
   ItemModel itemModel;
   @override
   Widget build(BuildContext context) {
-    return  Container(
-      height: 40,
+    return Container(
+      height: 100,
       width: double.infinity,
-      color: Colors.amber,
+      // color: Colors.amber,
       child: Row(
         children: [
-          // Text(itemModel.eText),
-          // Image.asset(itemModel.image),
-              Text(itemModel.jText),
+          Container(
+            child: Image.asset(
+              itemModel.image,
+              height: 100,
+            ),
+            color: Colors.white,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10),
+            child: Text(
+              '${itemModel.jText}\n${itemModel.eText}',
+              style: const TextStyle(
+                  fontSize: 15, fontWeight: FontWeight.w500, color: Colors.white),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 50),
+            child: IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.arrow_right),
+            ),
+          ),
         ],
       ),
     );

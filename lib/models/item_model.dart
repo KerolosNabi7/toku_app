@@ -1,10 +1,9 @@
-//import 'package:flutter/material.dart';
 class ItemModel {
 
-  // final String image;
-  // final String eText;
-  final String jText;
-  ItemModel({required this.jText});
+   final String image;
+   final String eText;
+   final String jText;
+   final String sound;
+  ItemModel({required this.image,required this.eText,required this.jText,required this.sound});
 }
 
-//required this.image,required this.eText,
