@@ -3,8 +3,8 @@ import 'package:toku_app/models/phrases_model.dart';
 import 'package:toku_app/widgets/phrases_widget.dart';
 
 class PhrasesView extends StatelessWidget {
-  PhrasesView({super.key});
-  final List<PhrasesModel> phrases = [
+  const PhrasesView({super.key});
+  final List<PhrasesModel> phrases = const [
     PhrasesModel(
       eText: "Are you coming",
       jText: "来ますか",

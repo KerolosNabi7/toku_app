@@ -69,7 +69,7 @@ class FamilyMembersView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff558B37),
+      backgroundColor: const Color(0xff558B37),
       appBar: AppBar(
         backgroundColor: const Color(0xff46322B),
         title: const Text(

@@ -4,8 +4,8 @@ import 'package:toku_app/models/item_model.dart';
 
 // ignore: must_be_immutable
 class ItemWidget extends StatelessWidget {
-  ItemWidget({required this.itemModel, super.key});
-  ItemModel itemModel;
+  const ItemWidget({required this.itemModel, super.key});
+  final ItemModel itemModel;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -39,7 +39,7 @@ class ItemWidget extends StatelessWidget {
             ],
           ),
         ),
-        Spacer(
+        const Spacer(
           flex: 1,
         ),
         Padding(

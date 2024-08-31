@@ -20,7 +20,7 @@ class HomeView extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) {
-              return NumbersView();
+              return const NumbersView();
             }),
           );
         },
@@ -32,7 +32,7 @@ class HomeView extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) {
-              return FamilyMembersView();
+              return const FamilyMembersView();
             }),
           );
         },
@@ -44,7 +44,7 @@ class HomeView extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) {
-              return ColorsView();
+              return const ColorsView();
             }),
           );
         },
@@ -56,7 +56,7 @@ class HomeView extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (BuildContext context) {
-              return PhrasesView();
+              return const PhrasesView();
             }),
           );
         },

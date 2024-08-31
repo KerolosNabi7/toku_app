@@ -4,10 +4,10 @@ import 'package:toku_app/widgets/item_widget.dart';
 
 // ignore: must_be_immutable
 class NumbersView extends StatelessWidget {
-  NumbersView({super.key});
+  const NumbersView({super.key});
 
-  List<ItemModel> itemModel =const [
-     ItemModel(
+  final List<ItemModel> itemModel = const [
+    ItemModel(
       sound: 'sounds/numbers/number_one_sound.mp3',
       jText: 'ichi',
       eText: 'one',
