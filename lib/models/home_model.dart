@@ -3,5 +3,8 @@ import 'dart:ui';
 class HomeModel {
   final String text;
   final Color color;
-  HomeModel({required this.text,required this.color});
+  final VoidCallback onTap;
+//final Function() onTap;
+  const HomeModel(
+      {required this.text, required this.color, required this.onTap});
 }

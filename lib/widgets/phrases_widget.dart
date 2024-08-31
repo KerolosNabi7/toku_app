@@ -1,36 +1,29 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:toku_app/models/item_model.dart';
+import 'package:toku_app/models/phrases_model.dart';
 
-// ignore: must_be_immutable
-class ItemWidget extends StatelessWidget {
-  ItemWidget({required this.itemModel, super.key});
-  ItemModel itemModel;
+class PhrasesWidget extends StatelessWidget {
+  const PhrasesWidget({super.key, required this.phrasesModel});
+  final PhrasesModel phrasesModel;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          color: Colors.white,
-          child: Image.asset(
-            itemModel.image,
-            height: 100,
-          ),
-        ),
-        Padding(
+    
+         Padding(
           padding: const EdgeInsets.only(left: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                itemModel.jText,
+                phrasesModel.jText,
                 style: const TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w500,
                     color: Colors.white),
               ),
               Text(
-                itemModel.eText,
+                phrasesModel.eText,
                 style: const TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w500,
@@ -39,7 +32,7 @@ class ItemWidget extends StatelessWidget {
             ],
           ),
         ),
-        Spacer(
+        const Spacer(
           flex: 1,
         ),
         Padding(
@@ -49,7 +42,7 @@ class ItemWidget extends StatelessWidget {
             iconSize: 40,
             onPressed: () {
               final player = AudioPlayer();
-              player.play(AssetSource(itemModel.sound));
+              player.play(AssetSource(phrasesModel.sound));
             },
             icon: const Icon(Icons.arrow_right),
           ),
